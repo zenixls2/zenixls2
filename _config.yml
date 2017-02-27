@@ -3,7 +3,7 @@
 name: zEnIx
 paginate: 25
 paginate_path: "/posts/page/:num/"
-url: https://zenixls2.github.io/zenixls2
+url: https://zenixls2.github.io/
 blog_theme: light # Or use dark
 
 # Optional settings
