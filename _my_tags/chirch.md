@@ -1,4 +1,0 @@
----
-slug: chirch
-name: Chirch
----
