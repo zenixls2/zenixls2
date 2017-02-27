@@ -6,11 +6,20 @@
   display: block;
   padding: 35px 0 85px;
   border-top: 1px solid $base-border-color;
+  text-align: center;
   p {
     font-size: 15px;
     color: $gray-light;
   }
   a {
     text-decoration: none;
+  }
+  span {
+    white-space: nowrap;
+  }
+  div.sep {
+    margin-left: 10px;
+	margin-right: 10px;
+	display: inline;
   }
 }
