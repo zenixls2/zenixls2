@@ -8,15 +8,9 @@ set -e
 
 # Set up Ruby dependencies via Bundler.
 
-SSH_ENV="$HOME/.ssh/environment"
+cat ~/.ssh/id_circleci_github
 
-echo "Initialize new SSH agent..."
-/usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-echo succeeded
-chmod 600 "${SSH_ENV}"
-. "${SSH_ENV}" > /dev/null
-/usr/bin/ssh-add;
-
+exit 1;
 
 gem install bundler --conservative
 bundle check || bundle install

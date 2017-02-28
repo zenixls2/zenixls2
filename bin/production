@@ -6,9 +6,6 @@
 set -e
 
 echo "Started deploying"
-echo $secret_key > $HOME/.ssh/id_circleci_github;
-cat $HOME/.ssh/id_circleci_github
-ssh-add $HOME/.ssh/id_circleci_github
 
 # Build site.
 bower install
