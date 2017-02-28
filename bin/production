@@ -10,6 +10,7 @@ echo $secret_key
 if [ ! -e $HOME/.ssh/id_rsa ]; then
 	echo $secret_key > $HOME/.ssh/id_rsa;
 	chmod 400 $HOME/.ssh/id_rsa;
+	echo "Host *\n  PreferredAuthentications publickey\n  IdentityFile ~/.ssh/id_rsa" >> $HOME/.ssh/config
 fi;
 
 # Build site.
@@ -18,7 +19,6 @@ bundle exec jekyll build
 
 cd _site
 
-export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa"
 git init
 git remote add origin git@github.com:zenixls2/zenixls2.github.io.git
 
