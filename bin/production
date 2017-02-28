@@ -6,12 +6,8 @@
 set -e
 
 echo "Started deploying"
-echo $secret_key
-if [ ! -e $HOME/.ssh/id_rsa ]; then
-	echo $secret_key > $HOME/.ssh/id_rsa;
-	chmod 400 $HOME/.ssh/id_rsa;
-	echo "Host *\n  PreferredAuthentications publickey\n  IdentityFile ~/.ssh/id_rsa" >> $HOME/.ssh/config
-fi;
+echo $secret_key > $HOME/.ssh/id_circleci_github;
+cat $HOME/.ssh/id_circleci_github
 
 # Build site.
 bower install
