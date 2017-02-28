@@ -8,6 +8,5 @@ dependencies:
 
 test:
   post:
-    - ./bin/production
     - bundle exec jekyll build
     - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"

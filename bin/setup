@@ -10,8 +10,6 @@ set -e
 
 cat ~/.ssh/id_circleci_github
 
-exit 1;
-
 gem install bundler --conservative
 bundle check || bundle install
 bundle update
