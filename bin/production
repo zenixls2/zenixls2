@@ -6,20 +6,24 @@
 set -e
 
 echo "Started deploying"
-
+echo $secret_key
+if [ ! -e $HOME/.ssh/id_rsa ]; then echo $secret_key > $HOME/id_rsa; fi;
 # Build site.
 bower install
 bundle exec jekyll build
 
-cp -R _site/* ../zenixls2.github.io/
+cd _site
 
-cd ../zenixls2.github.io
-# Push to gh-pages.
+git init
+git remote add origin git://github.com/zenixls2/zenixls2.github.io.git
+
 git add -fA
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 git push -f -q origin master
 
-# Move back to previous branch.
+cd ..
+rm -rf _site
+
 bower install
 
 echo "Deployed Successfully!"
