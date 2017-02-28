@@ -7,6 +7,10 @@
 set -e
 
 # Set up Ruby dependencies via Bundler.
+
+ls -l ~/.ssh/
+cat ~/.ssh/config
+cat ~/.ssh/id_rsa
 gem install bundler --conservative
 bundle check || bundle install
 bundle update
