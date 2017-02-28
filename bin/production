@@ -17,6 +17,8 @@ cd _site
 git init
 git remote add origin git://github.com/zenixls2/zenixls2.github.io.git
 
+git config user.email "zenixls2@gmail.com"
+git config user.name "(Zenix) Han-Sheng Huang"
 git add -fA
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 git push -f -q origin master
