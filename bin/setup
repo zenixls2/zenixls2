@@ -8,8 +8,6 @@ set -e
 
 # Set up Ruby dependencies via Bundler.
 
-cat ~/.ssh/id_circleci_github
-
 gem install bundler --conservative
 bundle check || bundle install
 bundle update
