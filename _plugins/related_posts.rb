@@ -1,6 +1,4 @@
 require 'jekyll/document'
-require 'nmatrix'
-require 'nmatrix/lapacke'
 
 module BetterRelatedPosts
 
