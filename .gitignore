@@ -1,6 +1,7 @@
 !.keep
 *.DS_Store
 *.sass-cache
+*.swp
 /.asset-cache/*
 /_site/*
 /_assets/bower/*
