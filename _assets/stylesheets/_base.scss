@@ -146,6 +146,29 @@ img {
   margin: 0;
 }
 
+table {
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+thead,
+tbody {
+  border-width: 0px;
+}
+
+th {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left: 1px solid $base-border-color;
+  padding-left: 12px;
+}
+
+td {
+  border-bottom: 1px solid $base-border-color;
+  border-left: 1px solid $base-border-color;
+  padding-left: 12px;
+}
+
 ::selection {
   color: $white;
   background-color: $gray-darkest;
