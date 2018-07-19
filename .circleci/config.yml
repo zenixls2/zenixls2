@@ -7,7 +7,7 @@ jobs: # a collection of steps
 
     steps:
       - checkout
-      - run: sudo apt-get install liblapack-dev
+      - run: sudo apt-get install -y liblapack-dev nodejs
       - run: ./bin/setup
       - run: ./bin/production
       - run: bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"
