@@ -8,7 +8,7 @@ jobs: # a collection of steps
     steps:
       - checkout
       - run: curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
-      - run: sudo apt-get install -y liblapack-dev npm nodejs
+      - run: sudo apt-get install -y liblapack-dev nodejs
       - run: ./bin/setup
       - run: ./bin/production
       - run: bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"
