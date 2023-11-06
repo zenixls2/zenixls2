@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
   <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
 </p>
+<a href="https://leaderboard.tonsmartchallenge.org/"> TON contract challenge rank top5%</a>
 <h2 align="center">Github Analysis</h2>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=zenixls2&show_icons=true&theme=merko" alt="My stats"/>
